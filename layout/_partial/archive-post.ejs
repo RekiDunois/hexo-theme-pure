@@ -2,9 +2,9 @@
   <div class="article-header">
     <%- partial('post/title', {class_name: 'article-title' }) %>
   </div>
-  <% if (post.excerpt){ %>
-    <div class="article-entry text-muted" itemprop="description">
-      <%- post.excerpt %>
+  <% if (post.description){ %>
+    <div class="article-entry text-muted article-description" itemprop="description">
+      <%- post.description %>
     </div>
     <% } %>
       <p class="article-meta">
